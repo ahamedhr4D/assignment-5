@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>provati poribahan</title>
+  <link rel="stylesheet" href="./style.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script>
     tailwind.config = {
@@ -21,6 +22,7 @@
 </head>
 
 <body>
+  
   <nav>
     <div class="container mx-auto lg:px-24 px-8 my-8">
       <div class="navbar bg-base-100">
@@ -133,7 +135,7 @@
                   <p>Coach-009-WEB ! AC_Business</p>
                 </div>
                 <div>
-                  <button class="btn btn-sm bg-green-200 ">8 Seats left</button>
+                  <button class="btn btn-sm bg-green-200 "> <span id="sit">8</span> Seats left</button>
                 </div>
               </div>
               <div>
@@ -188,28 +190,31 @@
             </div>
             <div>
               <div class="mt-6">
-                <button onclick="handleClick('hridoy')" id="btn1" class="btn btn-sm mr-2">A1</button>
+                <button class="btn btn-sm mr-2 ">A1</button>
                 <button class="btn btn-sm mr-14">A2</button>
-                <button class="btn btn-sm mr-2">B1</button>
-                <button class="btn btn-sm">B2</button>
+                <button class="btn btn-sm mr-2">A3</button>
+                <button class="btn btn-sm">A4</button>
+                <h1 style="display: none;">Economoy</h1>
+                <h1 style="display: none;">550</h1>
+               
               </div>
               <div class="mt-6">
-                <button class="btn btn-sm mr-2">A1</button>
-                <button class="btn btn-sm mr-14">A2</button>
-                <button class="btn btn-sm mr-2">B1</button>
-                <button class="btn btn-sm">B2</button>
+                <button class="btn btn-sm mr-2"> B1</button>
+                <button class="btn btn-sm mr-14">B2</button>
+                <button class="btn btn-sm mr-2">B3</button>
+                <button class="btn btn-sm">B4</button>
               </div>
               <div class="mt-6">
-                <button class="btn btn-sm mr-2">A1</button>
-                <button class="btn btn-sm mr-14">A2</button>
-                <button class="btn btn-sm mr-2">B1</button>
-                <button class="btn btn-sm">B2</button>
+                <button class="btn btn-sm mr-2">C1</button>
+                <button class="btn btn-sm mr-14">C2</button>
+                <button class="btn btn-sm mr-2">C3</button>
+                <button class="btn btn-sm">C4</button>
               </div>
               <div class="mt-6">
-                <button class="btn btn-sm mr-2">A1</button>
-                <button class="btn btn-sm mr-14">A2</button>
-                <button class="btn btn-sm mr-2">B1</button>
-                <button class="btn btn-sm">B2</button>
+                <button class="btn btn-sm mr-2">D1</button>
+                <button class="btn btn-sm mr-14">D2</button>
+                <button class="btn btn-sm mr-2">D3</Dutton>
+                <button class="btn btn-sm">D4</button>
               </div>
               <div class="mt-6">
                 <button class="btn btn-sm mr-2">A1</button>
@@ -248,17 +253,22 @@
           <div class="stat">
             <div>
               <div class="flex justify-between mt-12">
-                <p>Seat</p>
+                <div class="flex ">
+                  <p>Seat :</p>
+                  <h2 id="cnt" class="ml-2">0</h2>
+                </div>
                 <p>Class</p>
                 <p>Price</p>
               </div>
               <p>----------------------------------------------</p>
-              <!-- input nite hbe -->
+              <ul  id="spl" >
+                </ul>
+              
               <p class="divider"></p>
             </div>
-            <div class="flex justify-between mt-2 mb-2">
+            <div class="flex justify-between mt-1 mb-2">
               <p class="font-bold">Total</p>
-              <p class="font-bold">BDT 000</p>
+              <p id="total-cost" >0</p>
             </div>
             <div>
               <label class="input input-bordered flex items-center gap-2">

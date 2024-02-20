@@ -37,6 +37,12 @@ for (const btn of allbtn){
 
           const converterTotalCost = parseInt(totalCost)
           document.getElementById("total-cost").innerText = converterTotalCost+parseInt(Price);
+          const gtotalCost=document.getElementById
+          ("Grandtotal").innerText;
+          //console.log(typeof parseInt(totalCost));
+
+          const convterTotalCost = parseInt(gtotalCost)
+          document.getElementById("Grandtotal").innerText = convterTotalCost+parseInt(Price);
 
 
         // console.log(e.target.parentNode.childNodes[].innerText);

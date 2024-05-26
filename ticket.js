@@ -6,12 +6,18 @@
 //     console.log("boss");
 // }
 const allbtn = document.getElementsByClassName("btn");
+// const allbtn = document.getElementById("mb");
 // console.log(allbtn); 
 let count = 0;
 for (const btn of allbtn){
     btn.addEventListener("click",function(e){
        count = count + 1;
          document.getElementById("cnt").innerText = count;
+        //  const covertedcount = parseInt(count);
+
+        // console.log(typeof parseInt(count));
+
+    
         
        const placename = e.target.parentNode.childNodes[1].innerText;
       //  const placename = e.target.parentNode.childNodes[1].innerText;
@@ -32,6 +38,12 @@ for (const btn of allbtn){
           li.appendChild(p)
           li.appendChild(p2)
           li.appendChild(p3)
+
+          const sit = document.getElementById("sit").innerText;
+          const covertedsit = parseInt(sit);
+          document.getElementById("sit").innerText = covertedsit - parseInt(count);
+          // console.log(typeof parseInt(sit));
+
           selectedcontainer.appendChild(li);
 
           const totalCost=document.getElementById
@@ -55,6 +67,7 @@ for (const btn of allbtn){
         setInnerText("cnt",count);
     });
 }
+
 
 function setInnerText(id,value){
     document.getElementById(id).innerText = value;
